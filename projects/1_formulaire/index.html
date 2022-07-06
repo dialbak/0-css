@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            crossorigin="anonymous"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Les types d'input</title>
+  </head>
+  <body>
+    <h1 class="center">Input</h1>
+    <div class="input_style">
+      <input type="text" name="prenom" placeholder="Prénom..." /> <br />
+      <br />
+      <input type="color" /> <br />
+      <br />
+      <input type="checkbox" /> <br />
+      <br />
+      <input type="date" /> <br />
+      <br />
+      <input type="datetime-local" /> <br />
+      <br />
+      <input type="email" /> <br />
+      <br />
+      <input type="file" /> <br />
+      <inputtype="image"
+      src="https://source.unsplash.com/random/100x50?cat"/><br /><br />
+
+      <input type="month" /><br /><br />
+      <input type="number" /><br /><br />
+      <input type="password" /><br /><br />
+      <input type="radio" /><br /><br />
+      <input type="range" /><br /><br />
+      <input type="reset" /><br /><br />
+      <input type="search" /><br /><br />
+      <input type="submit" /><br /><br />
+      <input type="tel" /><br /><br />
+      <input type="time" /><br /><br />
+      <input type="url" /><br /><br />
+      <input type="week" /><br /><br />
+
+      <select>
+        <optgroup label="Fruits">
+          <option value="apple">Pomme</option>
+          <option selected>Avocat</option>
+          <option>Tomate</option>
+        </optgroup>
+        <optgroup label="Légumes">
+          <option>Chou</option>
+          <option>Radis</option>
+          <option>Pomme de terre</option>
+        </optgroup>
+      </select>
+
+      <div>
+        <select multiple>
+          <option>Pomme</option>
+          <option>Avocat</option>
+          <option>Tomate</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Sélectionnez vos sports favoris</legend>
+        <ul>
+          <li>
+            <label for="tennis">Tennis</label>
+            <input
+              type="checkbox"
+              checked
+              id="tennis"
+              name="tennis"
+              value="tennis"
+            />
+          </li>
+          <li>
+            <label for="basket">Basket</label>
+            <input type="checkbox" id="basket" name="basket" value="basket" />
+          </li>
+          <li>
+            <label for="foot">Foot</label>
+            <input type="checkbox" id="foot" name="foot" value="foot" />
+          </li>
+          <li>
+            <label for="natation">Natation</label>
+            <input
+              type="checkbox"
+              id="natation"
+              name="natation"
+              value="natation"
+            />
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- Les boutons radio -->
+      <fieldset>
+        <legend>Genre</legend>
+
+        <input type="radio" value="m" name="genre" />
+        <label for="m">Homme</label><br />
+
+        <input type="radio" value="f" name="genre" />
+        <label for="f">Femme</label><br />
+
+        <input type="radio" value="o" name="genre" />
+        <label for="o">Autre</label>
+      </fieldset>
+
+      <div>
+        <fieldset>
+          <progress max="100" value="33">33/100</progress>
+        </fieldset>
+
+        <fieldset>
+          <legend>Les étalons</legend>
+          <meter min="0" max="100" value="10" low="20" high="80" optimum="100">10</meter>
+          <meter min="0" max="100" value="60" low="20" high="80" optimum="100">60</meter>
+          <meter min="0" max="100" value="90" low="20" high="80" optimum="90" >90</meter>
+        </fieldset>
+      </div>
+      
+    </div>
+    <br />
+  </body>
+</html>

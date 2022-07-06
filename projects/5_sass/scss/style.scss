@@ -1,0 +1,50 @@
+// Les variables sont importées depuis notre partial :
+@import "buttons";
+@import "variables";
+@import "mixins";
+@import "media";
+@import "functions";
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background: $gray;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  box-sizing: border-box;
+  @include responsive(xs) {
+    background: red;
+  }
+  @include responsive(xl) {
+    background: orange;
+  }
+  width: 500px;
+  height: 400px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+    span {
+      color: green;
+      @include responsive(xs) {
+        color: red;
+      }
+    }
+  }
+  .text {
+    color: #333;
+  }
+  ul {
+    @include inline-list;
+  }
+  position: absolute;
+  left: centerAbsolute(500px);
+  top: centerAbsolute(400px);
+}

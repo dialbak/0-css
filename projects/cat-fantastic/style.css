@@ -1,0 +1,256 @@
+/* Régalges */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: rgb(76, 76, 76);
+}
+
+ul, nav {
+    list-style: none;
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(72, 90, 191);
+    color: rgb(255, 255, 255);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 90px;
+}
+
+.grille {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 350px;
+    height: 3px;
+    background: rgb(72, 90, 191);
+    margin-bottom: 30px;
+}
+
+section h3.smallTitle {
+    text-transform: uppercase;
+    font: bold 300% "Oswald", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 775px;
+}
+
+@media all and (max-width: 800px) {
+    section {
+        padding: 45px 15px;
+    }
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 90px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 20px;
+    border-bottom: 1px solid white;
+    padding: 6px;
+}
+
+@media all and (max-width: 800px) {
+    header {
+        padding: 20px 45px;
+    }
+}
+
+/* Section principale */
+
+.mainHeader {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.mainHeader .bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.mainHeader h1 {
+    font: bold 550% "Oswald", sans-serif;
+}
+
+.mainHeader h3 {
+    font: normal 170% "Oswald", sans-serif;
+    margin-bottom: 50px;
+}
+
+.mainHeader a.button {
+    padding: 22px 48px;
+}
+
+.mainHeaderContent {
+    opacity: 0;
+    margin-top: 50px;
+    animation: 1s apparition 1s forwards;
+    color: white;
+}
+
+@keyframes apparition {
+    100% {
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+/* Nos chats */
+
+.nosChats .grille li.sm {
+    flex-basis: 35%;
+}
+
+.nosChats .grille li.la {
+    flex-basis: 65%;
+}
+
+.nosChats .grille li {
+    height: 480px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+@media all and (max-width: 1000px) {
+    .nosChats .grille li.sm,
+    .nosChats .grille li.la {
+        flex-basis: 100%;
+    }
+}
+
+/* A propos */
+
+section.about {
+    background-color: rgba(236, 231, 231, 0.5);
+}
+
+.about p {
+    font-size: 130%;
+}
+
+/* Nous contacter */
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.contact form a.button {
+    padding: 20px 46px;
+    border-radius: 5px;
+}
+
+.contact form input {
+    padding: 15px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 130%;
+    flex-grow: 1;
+}
+
+@media all and (max-width: 1350px) {
+    .contact form {
+        width: 50%;
+    }
+    .contact form input {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(72,90,191);
+    color: rgb(255,255,255);
+    padding: 25px 30px;
+}
+
+footer p {
+    text-transform: uppercase;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    margin-left: 10px;
+    font-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
